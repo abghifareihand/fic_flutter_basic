@@ -1,5 +1,3 @@
-// ignore_for_file: camel_case_types, prefer_typing_uninitialized_variables
-
 import 'package:flutter/material.dart';
 
 class FICColumnWidget extends StatefulWidget {
@@ -14,10 +12,36 @@ class _FICColumnWidgetState extends State<FICColumnWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Dashboard"),
-        actions: const [],
+        title: const Text("FIC - Column"),
       ),
-      body: Container()
+      body: Container(
+        padding: const EdgeInsets.all(10.0),
+        child: const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Stylish Chair',
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text(
+              'Rp 350.000',
+              style: TextStyle(
+                color: Color(0xFF9A9390),
+                fontSize: 20,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

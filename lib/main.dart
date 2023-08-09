@@ -1,4 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:project_flutter_pertama/tugas/fic_button_widget.dart';
+import 'package:project_flutter_pertama/tugas/fic_circle_avatar_widget.dart';
+import 'package:project_flutter_pertama/tugas/fic_column_widget.dart';
+import 'package:project_flutter_pertama/tugas/fic_container_widget.dart';
+import 'package:project_flutter_pertama/tugas/fic_icon_widget.dart';
+import 'package:project_flutter_pertama/tugas/fic_image_widget.dart';
+import 'package:project_flutter_pertama/tugas/fic_scaffold_widget.dart';
+import 'package:project_flutter_pertama/tugas/fic_text_widget.dart';
 import 'package:project_flutter_pertama/widget_lesson/basic_form/dialog_widget.dart';
 import 'package:project_flutter_pertama/widget_lesson/basic_form/form_widget.dart';
 import 'package:project_flutter_pertama/widget_lesson/basic_layout/aspectratio_widget.dart';
@@ -16,6 +24,7 @@ import 'package:project_flutter_pertama/widget_lesson/basic_widget/circle_avatar
 import 'package:project_flutter_pertama/widget_lesson/basic_widget/container_widget.dart';
 import 'package:project_flutter_pertama/widget_lesson/basic_widget/icon_widget.dart';
 import 'package:project_flutter_pertama/widget_lesson/basic_widget/image_widget.dart';
+import 'package:project_flutter_pertama/widget_lesson/basic_widget/scaffold_widget.dart';
 import 'package:project_flutter_pertama/widget_lesson/basic_widget/text_widget.dart';
 import 'package:project_flutter_pertama/widget_lesson/navigation/bottom_navbar.dart';
 import 'package:project_flutter_pertama/widget_lesson/navigation/drawer_widget.dart';
@@ -40,7 +49,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SliverWidget(),
+      home: FICColumnWidget(),
       // Scaffold(
       //   appBar: AppBar(
       //     title: const Text('Jago Flutter'),
